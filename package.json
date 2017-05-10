@@ -9,15 +9,22 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "husky": "^0.13.3",
-    "validate-commit-msg": "^2.12.1"
+    "validate-commit-msg": "^2.12.1",
+    "yarn-bin-fix": "^0.1.15"
   },
   "scripts": {
-     "precommit": "cd frontend; yarn lint; yarn test",
-     "commit-msg": "validate-commit-msg"
+    "precommit": "cd frontend; npm run lint; PWD=$PWD/frontend npm run test -- --single-run",
+    "commit-msg": "validate-commit-msg"
   },
   "config": {
     "commitzen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "codelyzer": "^3.0.1"
   }
 }
