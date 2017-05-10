@@ -17,9 +17,6 @@
     "commit-msg": "validate-commit-msg"
   },
   "config": {
-    "commitzen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }

@@ -1,0 +1,29 @@
+{
+    "auth"              : false,    /* enable http authentication               */
+    "username"          : "root",   /* username for authentication              */
+    "password"          : "toor",   /* password hash in sha-1 for authentication*/
+    "algo"              : "sha512WithRSAEncryption", /* cryptographic algorithm */
+    "editor"            : "deepword", /* default, could be "dword" or "edward"    */
+    "packer"            : "tar",    /* default, could be "tar" or "zip"         */
+    "diff"              : true,     /* when save - send patch, not whole file   */
+    "zip"               : true,     /* zip text before send / unzip before save */
+    "localStorage"      : true,     /* local storage                            */
+    "buffer"            : true,     /* buffer for copying files                 */
+    "dirStorage"        : true,     /* store directory listing to localStorage  */
+    "minify"            : false,    /* minification of js,css,html and img      */
+    "online"            : true,     /* load js files from cdn or local path     */
+    "open"              : false     /* open web browser when server started     */
+    "cache"             : true,     /* add cache-control                        */
+    "showKeysPanel"     : true,     /* show classic panel with buttons of keys  */
+    "port"              : 8000,     /* http port                                */
+    "ip"                : null,     /* ip or null(default)                      */
+    "root"              : "/",      /* root directory                           */
+    "prefix"            : "",       /* url prefix                               */
+    "progress"          : true,     /* show progress of file operations         */
+    "htmlDialogs"       : true,     /* use html dialogs                         */
+    "onePanelMode"      : false,    /* set one panel mode                       */
+    "configDialog"      : true,     /* enable config dialog                     */
+    "console"           : true,     /* enable console                           */
+    "terminal"          : false,    /* disable terminal                         */
+    "terminalPath"      : '',       /* path of a terminal                       */
+}
